@@ -1,0 +1,44 @@
+Difference between array of pointers and pointer to an array
+
+Pointer to an array stores the address of any given array
+Array of pointers is an array of multiple pointer variables
+
+Pointer to an array: datatype (*var_name)[size_of_array];
+Array of pointers: datatype *var_name[array_size];
+
+Pointer to an array is also known as array pointers
+Array of pointers is also known as pointer arrays.
+
+-----------------------------------------------------------------------------
+
+Difference between structure and union
+
+Structure: struct keyword is used
+Union: union keyword is used
+
+Structure: Each data members is assigned with different memory locations
+Union: All the data members is assigned with same memory lacations
+
+Structure: Altering the value of a member will not affect other data members
+Union: Aletring the value of a member will effect other data members
+
+----------------------------------------------------------------------------------
+
+ Why do we need character pointer in implementation of sizeof operator?
+Typecasting the variable is to char pointer is required, because when we perform pointer arithmetic, it increments or decrements by 1 and it tells that how many character variables can be placed in that locations
+
+----------------------------------------------------------------------------------
+
+Difference between strcpy and memcpy
+
+strcpy is used to data of one string into another string 
+memcpy is used to copy specified number of bytes one memnory to another
+
+strcpy acts on data
+memcpy acts on memory
+
+In strcpy, length need not be specified. It stops when it encounters \0 character.
+In memcpy, length used to be specified.
+
+strcpy: char *strcpy(char *Dest, const char *Src);
+memcpy: void * memcpy(void *Dest, const void *Src, size_t numBytes);
